@@ -11,6 +11,11 @@ public class Computer {
         this.cpu = cpu;
     }
 
+    public Computer(int ssd, String cpu) {
+        this.ssd = ssd;
+        this.cpu = cpu;
+    }
+
     public Computer() {
     }
 
@@ -18,6 +23,7 @@ public class Computer {
         System.out.println("Много мониторов: " + multiMonitor);
         System.out.println("SSD: " + ssd + " GB");
         System.out.println("Модель CPU: " + cpu);
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -25,5 +31,7 @@ public class Computer {
         computer.printInfo();
         Computer comp = new Computer(true, 256, "AMD");
         comp.printInfo();
+        Computer third = new Computer(128, "Elbrus");
+        third.printInfo();
     }
 }
