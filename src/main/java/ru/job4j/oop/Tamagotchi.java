@@ -11,14 +11,13 @@ public class Tamagotchi {
         return "weight: " + weight;
     }
 
-    public static void feedPet(Tamagotchi opy) {
-        opy.feed();
-    }
-
     public static void main(String[] args) {
         Tamagotchi pet = new Tamagotchi();
+        Tamagotchi petCopy = pet;
         System.out.println(pet.info());
-        feedPet(pet);
+        System.out.println("copy of " + petCopy.info());
+        petCopy.feed();
         System.out.println(pet.info());
+        System.out.println("copy of " + petCopy.info());
     }
 }
