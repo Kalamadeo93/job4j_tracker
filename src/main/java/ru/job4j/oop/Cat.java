@@ -23,6 +23,11 @@ public class Cat {
         return voice;
     }
 
+    public String lick() {
+        String tongue = "лизь-лизь";
+        return tongue;
+    }
+
     public static void main(String[] args) {
         Cat peppy = new Cat();
         Cat sparky = new Cat();
